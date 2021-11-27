@@ -13,10 +13,17 @@
 
 #include <string.h>
 #include <stdio.h>
+#include <dlfcn.h>
 
 int main(void)
 {
-		
-	printf("this is ok\n");
+	void(*myadd)(int a, int b);
+	void *handle;
+	handle = dlopen("./libmyc++.so", RTLD_LAZY);
+	myadd = dlsym(handle, "addc");
+//
+	myadd(1, 2);
+	//dlclose(handle);
+	//printf("diaoyong so wenjian : %d\n", result);
 	return 0;
 }

@@ -13,4 +13,13 @@ class main
 	public:
 		void add(int a,int b);
 };
+
+
+
+extern "C"
+{
+	void addc(int c,int d);
+}
+
+
 #endif

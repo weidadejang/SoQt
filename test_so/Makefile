@@ -3,7 +3,7 @@ TARGET=MAIN
 CFLAGS:=-g -O0 -W -Wall -Iinclude -std=c99 -D_GNU_SOURCE -DDAEMON
 #CFLAGS:=-g -O0 -W -Wall -Iinclude -std=c99 -D_GNU_SOURCE
 #LDFLAGS:=-Wl,-wrap,free
-LDFLAGS:=-W
+LDFLAGS:=-W -ldl
 #LIBS:= -lpthread -lm -L/usr/local/sqlite3/lib -lsqlite3
 #LIBS:= -lpthread -lm -L/usr/local/sqlite/lib -lsqlite3
 #LIBS:= -lpthread -lm -L/usr/local/sqliteARM/lib -lsqlite3

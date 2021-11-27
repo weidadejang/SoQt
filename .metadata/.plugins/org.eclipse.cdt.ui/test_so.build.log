@@ -1,0 +1,19 @@
+10:51:15 **** Incremental Build of configuration Default for project test_so ****
+make 
+/usr/bin/gcc -g -O0 -W -Wall -Iinclude -std=c99 -D_GNU_SOURCE -DDAEMON -c main.c -o main.o
+main.c: In function ‘main’:
+main.c:27:39: error: ‘result’ undeclared (first use in this function)
+  printf("diaoyong so wenjian : %d\n", result);
+                                       ^
+Makefile:25: recipe for target 'main.o' failed
+main.c:27:39: note: each undeclared identifier is reported only once for each function it appears in
+main.c:21:8: warning: variable ‘handle’ set but not used [-Wunused-but-set-variable]
+  void *handle;
+        ^
+main.c:20:7: warning: unused variable ‘myadd’ [-Wunused-variable]
+  int(*myadd)(int a, int b);
+       ^
+make: *** [main.o] Error 1
+
+10:51:15 Build Finished (took 202ms)
+

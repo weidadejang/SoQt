@@ -15,4 +15,11 @@ void main::add(int a,int b)
 {
 	cout << a << endl;
 	cout << b << endl;
+	cout << "this is a test" << endl;
+}
+
+void addc(int c,int d)
+{
+	main h;
+	h.add(c,d);
 }
