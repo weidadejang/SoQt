@@ -1,0 +1,7 @@
+10:17:44 **** Incremental Build of configuration Default for project so ****
+make all 
+g++ -o main.o  -c -g -fPIC main.cpp -I./include
+main.cpp:10:26: warning: extra tokens at end of #include directive [enabled by default]
+ #include "include/main.h";
+                          ^
+g++ main.o -lz -lm -lpcre -Wall -fPIC -shared -o libad.so

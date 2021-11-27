@@ -1,0 +1,25 @@
+
+
+
+#TARGET 	:= ./cpp.so
+#SOURCE 	:= main.cpp
+#OBJS	=${SOURCES:.cpp=.o}
+#
+#CC 		:= g++
+#LIBS:= -lpthread -lm -L/usr/local/sqlite/lib -lsqlite3
+#INCLUDE := -I../include/*
+#LIBS	:=
+#CFLAGS	:=	-g -Wall
+
+#link
+#$(TARGET):$(OBJS)
+#	$(CC) -shared -o $@ $^ $(CFLAGS) $(LIBS)
+	
+#compile
+#	$(CC) -fPIC -c $(CFLAGS) $(INCLUDE) -o $@ &<
+	
+#clean
+#	rm -rf *.o
+#	rm -rf $@
+
+
